@@ -8,7 +8,7 @@ self.addEventListener('fetch', (event)=>{
     console.log(event.request.url);
     console.log("Cambia los estilos");
     
-    if(event.request.url.includes('style.css')){
+   /* if(event.request.url.includes('style.css')){
         const respuesta = new Response(
             `body{
                 color: white;
@@ -21,6 +21,6 @@ self.addEventListener('fetch', (event)=>{
             }
         );
         event.respondWith(respuesta);
-    }
+    }*/
 
 })
